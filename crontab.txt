@@ -1,0 +1,11 @@
+# For example, you can run a backup of all your user accounts
+# at 5 a.m every week with:
+# 0 5 * * 1 tar -zcf /var/backups/home.tgz /home/
+
+0 7 * * * /home/pi/slackbot/venv/bin/python3 /home/pi/slackbot/commands/switch_on.py
+0 10 * * * /home/pi/slackbot/venv/bin/python3 /home/pi/slackbot/commands/switch_off.py
+0 0 * * * /home/pi/slackbot/venv/bin/python3 /home/pi/slackbot/commands/switch_off.py
+
+## test
+# 28 18  * * * /home/pi/slackbot/venv/bin/python3 /home/pi/slackbot/commands/switch_off.py
+# 29 18  * * * /home/pi/slackbot/venv/bin/python3 /home/pi/slackbot/commands/switch_on.py
