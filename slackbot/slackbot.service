@@ -1,0 +1,13 @@
+[Unit]
+Description=Python Slack Bot
+
+[Service]
+ExecStart=/home/pi/bot/slackbot/main.py
+Restart=always
+Type=simple
+User=pi
+Group=pi
+WorkingDirectory=/home/pi/bot/slackbot
+
+[Install]
+WantedBy=multi-user.target
