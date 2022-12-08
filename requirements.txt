@@ -1,6 +1,6 @@
 pigpio==1.44
 pkg-resources==0.0.0
-certifi==2019.9.11
+certifi==2022.12.7
 chardet==3.0.4
 idna==2.8
 picamera==1.13
